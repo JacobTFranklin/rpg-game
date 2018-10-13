@@ -150,10 +150,10 @@ $("#boba").on("click", function(){
 
 //Defender click functions
 
-$("body").on("click", "#yodaEnemy", function(){
+$("body").on("click", ".yodaEnemy", function(){
     if(!inBattle){
     $("#yodaDefender").show();
-    $("#yodaEnemy").hide();
+    $(".yodaEnemy").hide();
     currentDefender = yoda;
     $(".enemyHealth").html(yoda.healthPoints);
     startBattle();
@@ -161,30 +161,30 @@ $("body").on("click", "#yodaEnemy", function(){
 });
 
 
-$("body").on("click", "#darthEnemy", function(){
+$("body").on("click", ".darthEnemy", function(){
     if(!inBattle){ 
+    $(".darthEnemy").hide();
     $("#darthDefender").show();
-    $("body").on("click", "#darthEnemy", hide());
     currentDefender = darth;
     $(".enemyHealth").html(darth.healthPoints);
     startBattle();
     };
 });
 
-$("body").on("click", "#obiEnemy", function(){
+$("body").on("click", ".obiEnemy", function(){
     if(!inBattle){ 
     $("#obiDefender").show();
-    $("#obiEnemy").hide();
+    $(".obiEnemy").hide();
     currentDefender = obi;
     $(".enemyHealth").html(obi.healthPoints);
     startBattle();
     };
 });
 
-$("body").on("click", "#bobaEnemy", function(){
+$("body").on("click", ".bobaEnemy", function(){
     if(!inBattle){
     $("#bobaDefender").show();
-    $("#bobaEnemy").hide();
+    $(".bobaEnemy").hide();
     currentDefender = boba;
     $(".enemyHealth").html(boba.healthPoints);
     startBattle();
