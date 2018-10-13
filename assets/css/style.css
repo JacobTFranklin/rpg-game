@@ -1,0 +1,108 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url("../images/bg.jpg");
+    background-size: cover;
+}
+
+h1 {
+    color:white;
+    font-family: 'Cinzel', serif;
+    float: right;
+}
+
+#charactersGroup {
+    font-family: 'Cinzel', serif;
+    height: 175px;
+    width: 400px;
+    font-size: 20px;
+    position: absolute;
+    left: 38%;
+
+}
+
+ .card {
+    background: none;
+    color: white;
+    border-style:solid;
+    border-color:white;
+    font-size: 20px;
+}
+
+.character_body {
+    padding: 0px;
+    font-size: 20px;
+   
+}
+
+.character_title {
+    margin: 0px;
+    padding: 0px;
+}
+
+.card-deck {
+    font-family: 'Cinzel', serif;
+    width: 750px;
+   
+    
+
+}
+
+#yourCharacter, #defender {
+    padding: 20px;
+}
+
+#enemiesYodaSelected {
+    font-family: 'Cinzel', serif;
+    height: 210px;
+    width: 400px;
+    position: absolute;
+    left: 38%;
+    
+    
+
+}
+
+#enemiesDarthSelected {
+    font-family: 'Cinzel', serif;
+    height: 200px;
+    width: 400px;
+    font-size: 20px;
+    position: absolute;
+    left: 38%;
+    
+}
+
+#enemiesObiSelected {
+    font-family: 'Cinzel', serif;
+    height: 210px;
+    width: 400px;
+    font-size: 20px;
+    position: absolute;
+    left: 38%;
+}
+
+#enemiesBobaSelected {
+    font-family: 'Cinzel', serif;
+    height: 210px;
+    width: 400px;
+    font-size: 20px;
+    position: absolute;
+    left: 38%;
+}
+
+footer, .push {
+    height: 50px;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+#attack {
+    font-family: 'Cinzel', serif;
+}

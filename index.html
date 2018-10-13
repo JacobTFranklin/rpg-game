@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>StarWars RPG</title>
+
+    <!--External CSS-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Righteous" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <!--Wrapper-->
+    <div class="wrapper">
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 offset-8">
+                    <h1>StarWars RPG</h1>
+                </div>
+            </div>
+
+
+            <!--Characters-->
+            <div class="row">
+
+                <div class="card-group" id="charactersGroup">
+
+                    <!--Yoda-->
+                    <div class="card" id="yoda">
+                        <img class="card-img-top" src="assets/images/yoda.png" alt="Yoda">
+                        <div class="card-body character_body">
+                            <center>
+                                <h5 class="card-title character_title">Yoda</h5>
+                                <p class="card-text">100</p>
+                            </center>
+                        </div>
+                    </div>
+
+                    <!--Darth Vader-->
+                    <div class="card" id="darth">
+                        <img class="card-img-top" src="assets/images/darthvader.jpeg" alt="Darth Vader">
+                        <div class="card-body character_body">
+                            <center>
+                                <h5 class="card-title character_title">Darth Vader</h5>
+                                <p class="card-text">150</p>
+                            </center>
+                        </div>
+                    </div>
+
+                    <!--Obi-Wan-->
+                    <div class="card" id="obi">
+                        <img class="card-img-top" src="assets/images/obi.png" alt="Obi-Wan Kenobi">
+                        <div class="card-body character_body">
+                            <center>
+                                <h5 class="card-title character_title">Obi-Wan</h5>
+                                <p class="card-text">125</p>
+                            </center>
+                        </div>
+                    </div>
+
+                    <!--Boba Fett-->
+                    <div class="card" id="boba">
+                        <img class="card-img-top" src="assets/images/boba.jpeg" alt="Boba Fett">
+                        <div class="card-body character_body">
+                            <center>
+                                <h5 class="card-title character_title">Boba Fett</h5>
+                                <p class="card-text">110</p>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--Spacing-->
+            <div class="row">
+                &nbsp;
+            </div>
+            <div class="row">
+                &nbsp;
+            </div>
+            <div class="row">
+                &nbsp;
+            </div>
+            <div class="row">
+                &nbsp;
+            </div>
+            <div class="row">
+                &nbsp;
+            </div>
+            <div class="row">
+                &nbsp;
+            </div>
+            <div class="row">
+                &nbsp;
+            </div>
+            <div class="row">
+                &nbsp;
+            </div>
+
+            <!--Win/Lose displays-->
+            <center><h1 id="youWin">You Win!</h1></center>
+            <center><h1 id="gameOver">Game Over</h1></center>
+
+              
+
+            <!--Attack Button-->
+            <center><button type="button" class="btn btn-outline-light" id="attack">Attack</button></center>
+
+            <div class="row">
+                    &nbsp;
+                </div>
+
+            <!--Your Character-->
+            <center>
+                <div class="card-deck">
+
+                    <!--Yoda Selected-->
+                    <div class="card" id="yourCharacter">
+                        Your Character
+                        <div class="card" id="yodaSelected">
+                            <img class="card-img-top" src="assets/images/yoda.png" alt="Yoda">
+                            <div class="card-body character_body">
+                                <center>
+                                    <h5 class="card-title character_title">Yoda</h5>
+                                    <p class="card-text yourHealth">100</p>
+                                </center>
+                            </div>
+                        </div>
+
+
+                        <!--Darth Vader Selected-->
+
+                        <div class="card" id="darthSelected">
+                            <img class="card-img-top" src="assets/images/darthvader.jpeg" alt="Darth Vader">
+                            <div class="card-body character_body">
+                                <center>
+                                    <h5 class="card-title character_title">Darth Vader</h5>
+                                    <p class="card-text yourHealth">150</p>
+                                </center>
+                            </div>
+                        </div>
+
+
+                        <!--Obi-Wan Selected-->
+
+                        <div class="card" id="obiSelected">
+                            <img class="card-img-top" src="assets/images/obi.png" alt="Obi-Wan Kenobi">
+                            <div class="card-body character_body">
+                                <center>
+                                    <h5 class="card-title character_title">Obi-Wan</h5>
+                                    <p class="card-text yourHealth">125</p>
+                                </center>
+                            </div>
+                        </div>
+
+
+
+                        <!--Boba Fett Selected-->
+
+                        <div class="card" id="bobaSelected">
+                            <img class="card-img-top" src="assets/images/boba.jpeg" alt="Boba Fett">
+                            <div class="card-body character_body">
+                                <center>
+                                    <h5 class="card-title character_title">Boba Fett</h5>
+                                    <p class="card-text yourHealth">110</p>
+                                </center>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+
+                    <!--Defender-->
+                    <div class="card" id="defender">
+                        Defender
+
+                        <!--Yoda Selected-->
+                        <div class="card" id="yodaDefender">
+                            <img class="card-img-top" src="assets/images/yoda.png" alt="Yoda">
+                            <div class="card-body character_body">
+                                <center>
+                                    <h5 class="card-title character_title">Yoda</h5>
+                                    <p class="card-text enemyHealth">100</p>
+                                </center>
+                            </div>
+                        </div>
+
+
+                        <!--Darth Vader Selected-->
+
+                        <div class="card" id="darthDefender">
+                            <img class="card-img-top" src="assets/images/darthvader.jpeg" alt="Darth Vader">
+                            <div class="card-body character_body">
+                                <center>
+                                    <h5 class="card-title character_title">Darth Vader</h5>
+                                    <p class="card-text enemyHealth">150</p>
+                                </center>
+                            </div>
+                        </div>
+
+
+                        <!--Obi-Wan Selected-->
+
+                        <div class="card" id="obiDefender">
+                            <img class="card-img-top" src="assets/images/obi.png" alt="Obi-Wan Kenobi">
+                            <div class="card-body character_body">
+                                <center>
+                                    <h5 class="card-title character_title">Obi-Wan</h5>
+                                    <p class="card-text enemyHealth">125</p>
+                                </center>
+                            </div>
+                        </div>
+
+
+
+                        <!--Boba Fett Selected-->
+
+                        <div class="card" id="bobaDefender">
+                            <img class="card-img-top" src="assets/images/boba.jpeg" alt="Boba Fett">
+                            <div class="card-body character_body">
+                                <center>
+                                    <h5 class="card-title character_title">Boba Fett</h5>
+                                    <p class="card-text enemyHealth">110</p>
+                                </center>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+            </center>
+        
+            <!--Spacing-->
+            <div class="row">
+                &nbsp;
+            </div>
+
+ 
+
+
+
+
+            <!--Enemies, Yoda Selected-->
+            <div class="row">
+                <div class="card-group" id="enemiesYodaSelected">
+
+                    <!--Darth Vader-->
+                    <div class="card" id="darthEnemy">
+                        <img class="card-img-top" src="assets/images/darthvader.jpeg" alt="Darth Vader">
+                        <div class="card-body character_body">
+                            <center>
+                                <h5 class="card-title character_title">Darth Vader</h5>
+                                <p class="card-text">150</p>
+                            </center>
+                        </div>
+                    </div>
+
+                    <!--Obi-Wan-->
+                    <div class="card" id="obiEnemy">
+                        <img class="card-img-top" src="assets/images/obi.png" alt="Obi-Wan Kenobi">
+                        <div class="card-body character_body">
+                            <center>
+                                <h5 class="card-title character_title">Obi-Wan</h5>
+                                <p class="card-text">125</p>
+                            </center>
+                        </div>
+                    </div>
+
+                    <!--Boba Fett-->
+                    <div class="card" id="bobaEnemy">
+                        <img class="card-img-top" src="assets/images/boba.jpeg" alt="Boba Fett">
+                        <div class="card-body character_body">
+                            <center>
+                                <h5 class="card-title character_title">Boba Fett</h5>
+                                <p class="card-text">110</p>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Enemies, Darth Vader Selected-->
+            <div class="row">
+                <div class="card-group" id="enemiesDarthSelected">
+
+                    <!--Yoda-->
+                    <div class="card" id="yodaEnemy">
+                        <img class="card-img-top" src="assets/images/yoda.png" alt="Yoda">
+                        <div class="card-body character_body">
+                            <center>
+                                <h5 class="card-title character_title">Yoda</h5>
+                                <p class="card-text">100</p>
+                            </center>
+                        </div>
+                    </div>
+
+
+                    <!--Obi-Wan-->
+                    <div class="card" id="obiEnemy">
+                        <img class="card-img-top" src="assets/images/obi.png" alt="Obi-Wan Kenobi">
+                        <div class="card-body character_body">
+                            <center>
+                                <h5 class="card-title character_title">Obi-Wan</h5>
+                                <p class="card-text">125</p>
+                            </center>
+                        </div>
+                    </div>
+
+                    <!--Boba Fett-->
+                    <div class="card" id="bobaEnemy">
+                        <img class="card-img-top" src="assets/images/boba.jpeg" alt="Boba Fett">
+                        <div class="card-body character_body">
+                            <center>
+                                <h5 class="card-title character_title">Boba Fett</h5>
+                                <p class="card-text">110</p>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--Enemies Obi-Wan Selected-->
+            <div class="row">
+                <div class="card-group" id="enemiesObiSelected">
+
+                    <!--Yoda-->
+                    <div class="card" id="yodaEnemy">
+                        <img class="card-img-top" src="assets/images/yoda.png" alt="Yoda">
+                        <div class="card-body character_body">
+                            <center>
+                                <h5 class="card-title character_title">Yoda</h5>
+                                <p class="card-text">100</p>
+                            </center>
+                        </div>
+                    </div>
+
+                    <!--Darth Vader-->
+                    <div class="card" id="darthEnemy">
+                        <img class="card-img-top" src="assets/images/darthvader.jpeg" alt="Darth Vader">
+                        <div class="card-body character_body">
+                            <center>
+                                <h5 class="card-title character_title">Darth Vader</h5>
+                                <p class="card-text">150</p>
+                            </center>
+                        </div>
+                    </div>
+
+                    <!--Boba Fett-->
+                    <div class="card" id="bobaEnemy">
+                        <img class="card-img-top" src="assets/images/boba.jpeg" alt="Boba Fett">
+                        <div class="card-body character_body">
+                            <center>
+                                <h5 class="card-title character_title">Boba Fett</h5>
+                                <p class="card-text">110</p>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--Enemies, Boba Fett Selected-->
+            <div class="row">
+                <div class="card-group" id="enemiesBobaSelected">
+
+                    <!--Yoda-->
+                    <div class="card" id="yodaEnemy">
+                        <img class="card-img-top" src="assets/images/yoda.png" alt="Yoda">
+                        <div class="card-body character_body">
+                            <center>
+                                <h5 class="card-title character_title">Yoda</h5>
+                                <p class="card-text">100</p>
+                            </center>
+                        </div>
+                    </div>
+
+                    <!--Darth Vader-->
+                    <div class="card" id="darthEnemy">
+                        <img class="card-img-top" src="assets/images/darthvader.jpeg" alt="Darth Vader">
+                        <div class="card-body character_body">
+                            <center>
+                                <h5 class="card-title character_title">Darth Vader</h5>
+                                <p class="card-text">150</p>
+                            </center>
+                        </div>
+                    </div>
+
+                    <!--Obi-Wan-->
+                    <div class="card" id="obiEnemy">
+                        <img class="card-img-top" src="assets/images/obi.png" alt="Obi-Wan Kenobi">
+                        <div class="card-body character_body">
+                            <center>
+                                <h5 class="card-title character_title">Obi-Wan</h5>
+                                <p class="card-text">125</p>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!--Wrapper-->
+        </div>
+
+    </div>
+    <div class="push">
+
+    </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="assets/javascript/rpg.js"></script>
+
+</body>
+
+</html>
+
+<!--External Javascript-->
